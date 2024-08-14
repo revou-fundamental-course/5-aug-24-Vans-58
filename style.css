@@ -1,0 +1,112 @@
+html{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+    background-color: rgb(215, 232, 252);
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+main{
+    display: flex;
+    gap: 40px;
+}
+.dis{
+    flex: 1;
+    padding: 5px; 
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 0;
+}
+article{
+    text-align: justify;
+}
+button{
+    
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #00395f;
+    transform: scale(1.05);
+}
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #0075fb;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+body {
+    margin: 10px;
+    font-family: Arial, sans-serif;
+}
+.left, .right {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+}
+header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color:       #007bff
+;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    text-align: center;
+    z-index: 1000; 
+    transition: box-shadow 0.3s ease;
+}
+.header-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+main {
+    margin-top: 70px; 
+    padding: 20px;
+}
+.right{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hasil{
+    color: rgb(0, 0, 0);
+}
+.infomasi{
+    text-align: center;
+}
+
+.download{
+text-align: center;
+}
+.button-container{
+    
+    gap: 20px; 
+    display: flex;
+    width: 10px;
+    height: auto;
+}
+
+.button1 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.img{
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+    align-items: center;     
+    width: 200px;
+    height: auto;           
+
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator BMI</title>  
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <h2>KALKULATOR BMI</h2>
+            <script src="script.js"></script>
+        </header>
+        <main>
+            <aside class="dis">
+            <div>
+                <h3>Kalkulator BMI</h3>
+            </div>
+    
+            <article>
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaiman denganmmu? Yuk, hitung sekarang di kalkulator BMI. </p>
+            </article>
+
+        <!--Ini pengisian Form  -->
+
+            <form id="bmiForm">
+                <div>
+                <h3 class="form">Jenis Kelamin</h3>
+                <input type="radio" name="gender" value="Laki-laki" class="form"><label for="Laki-laki">Pria</label>
+                <input type="radio" name="gender" value="Perempuan" class="form"><label for="Perempuan">Perempuan</label>
+                </div>
+    
+                <div>
+                    <h3 class="form">Berat Badan (kg)</h3>
+                    <input type="number" class="form" id="beratBadan">
+                </div>
+                <div>
+                    <h3 class="form">Usia (tahun)</h3>
+                    <input type="number" id="umur">
+                </div>
+                <div>
+                    <h3 class="form">Tinggi badan (cm)</h3>
+                    <input type="number" id="tinggi">
+                </div>
+                <br>
+                <div>
+                    <button onclick="hitungBMI (event)">Hitung BMI</button>
+                    <button onclick="reset()">Reset</button>
+                </div>
+                <br>
+            </form>
+            <article>
+                <h3>Keunggulan Fitur</h3>
+                <ol>
+                    <li>Menghitung berat badan</li>
+                    <li>Menentukan kategori berat badan ideal atau tidak</li>
+                    <li>Mempersiapkan program penurunan berat badan</li>
+                </ol>
+                <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
+                    <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M2.</p></p>
+                        
+            </article>
+            </aside>
+
+<!-- Ini sebelah kanan -->
+
+            <aside class="dis">
+                <article>
+                    <h3>Hasil</h3>
+                <form class="right" id="bmiForm">
+                    <div class="hasil">
+                        <h4 id="status" class="hasil">Hasil akan terlihat disini</h4>
+                        <h2><span id="bmi-result">0</span></h2>
+                        <h4 id="massage"></h4>
+                        <button type="button" id="downloadBtn" style="display:none;"  onclick="downloadPDF()">Unduh Hasil PDF</button>
+            
+                    </div>
+                 </form>
+                 
+                 <p id="saran"></p>
+                <div class="button">
+                 <button type="button" id="tombolkonsultasi" style="display:none;" >Konsultasi Ahli Gizi Via Aplikasi</button>
+                 <button type="button" id="tombolregis" style="display:none;" >Registrasi Online Ahli Gizi</button>
+                </div>
+                <div>
+                    <p id="message" style="display:none;"></p>
+                </div>
+                </article>
+
+            <form class="informasi"  >
+                <p id="penyakit"></p>
+                <div class="button" >
+                 <button type="button" id="tomboldokter" style="display:none;" >Konsultasi Dokter Via Aplikasi</button>
+                 <button type="button" id="buttononline" style="display:none;" >Registrasi Online Sekarang</button>
+                </div>
+                <div>
+                    <p id="message" style="display:none;"></p>
+                </div>
+
+<!-- ini link download -->
+
+            </form>
+            <p class="download">Download Aplikasi</p>
+            <div class="container">
+            <div id="download-logos" class="button-container">
+                <a href="https://play.google.com/store" target="_blank" class="button1">
+                    <img src="googleplay.png" alt="Download on Google Play" class="img" >
+                </a>
+                <a href="https://www.apple.com/app-store/" target="_blank" class="button1"> 
+                    <img src="appstore.png" alt="Download on App Store" class="img" >
+                </a>  
+            </div>
+            </div>
+            </aside>
+        </main>
+        
+        <script src="script.js" defer></script>
+
+
+    </body>
+</html>
